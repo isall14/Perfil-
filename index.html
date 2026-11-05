@@ -1,151 +1,103 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculum</title>
-
-    <style>
-
-    body{
-        background: linear-gradient(to bottom, rgb(28, 58, 104), rgb(14, 32, 61));
-        margin: 40px;
-        font-family: sans-serif;
-    }
-
-    h1{
-        text-align: center;
-        font-family: sans-serif; 
-        color: aliceblue;
-        background-color: rgba(255,255,255,0.08);
-        padding: 12px;
-        border-radius: 10px;
-        border-left: 5px solid #4da3ff;
-        box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
-    }
-
-    h2{
-        text-align: left;
-        color: aliceblue;
-        background-color: rgba(255,255,255,0.05);
-        padding: 8px;
-        border-radius: 8px;
-        border-left: 4px solid #4da3ff;
-    }
-
-    pre{
-        text-align: left;
-        font-family: sans-serif;
-        font-size: medium;
-        color: aliceblue;
-        background-color: rgba(255,255,255,0.03);
-        padding: 15px;
-        border-radius: 10px;
-        line-height: 1.5;
-        box-shadow: 0px 0px 8px rgba(0,0,0,0.2);
-    }
-
-    hr{
-        border: none;
-        height: 2px;
-        background-color: #4da3ff;
-        margin-top: 25px;
-        margin-bottom: 25px;
-        border-radius: 10px;
-    }
-
-</style>
+    <title>MugStore | Tienda de Tazas</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
-
 <body>
 
-    <h1> Datos Personales</h1>
+    <!-- ENCABEZADO -->
+    <header>
+        <div class="logo">☕ MugStore</div>
 
-    <pre>
-Kendall Isaac Umaña Solarte
-Cedula: 1-20230286 
-Tel: 8448-3840
-Email: ctpciberkendallu@gmail.com 
-    </pre>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#productos">Productos</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
 
-    <h1>Experiencia segun Subareas.</h1>
+    <!-- PORTADA -->
+    <section class="portada" id="inicio">
+        <div class="contenido">
+            <h1>Una taza para cada momento</h1>
+            <p>Encuentra tu taza favorita y disfruta cada sorbo.</p>
+            <a href="#productos" class="boton">Ver productos</a>
+        </div>
+    </section>
 
-    <hr>
+    <!-- PRODUCTOS -->
+    <section class="productos" id="productos">
+        <h2>Nuestras tazas</h2>
+        <p class="subtitulo">Diseños únicos para personas especiales</p>
 
-    <h2>Operaciones Ciberseguras</h2>
+        <div class="contenedor-productos">
 
-<pre> 
-1-Cisco Packet Tracer
-Dispongo de conocimiento basico/intermedio sobre este software que simula redes realistas, he tenido la oportunidad de configurar redes DHCP
-y manuales, tambien tuve la oportunidad de configurar una red en este software para despues hacerlo con estructura fisica. 
+            <div class="producto">
+                <img src="https://placehold.co/300x250/fce4ec/9c4965?text=Taza+Rosa"
+                     alt="Taza rosa">
+                <h3>Taza Rosada</h3>
+                <p>Hermosa taza de color rosa.</p>
+                <span>₡3.500</span>
+                <button>Comprar</button>
+            </div>
 
-2-Nmap (escaneo de redes)
-cuento con conocimiento basico sobre esta herramienta de escaneo de redes, con la capacidad de escanear diferentes puntos de un dispositivo,
-como el Sistema operativo, puertas abiertas, servicios de aplicaciones desactualizados entre otros. 
+            <div class="producto">
+                <img src="https://placehold.co/300x250/e3f2fd/3975a5?text=Taza+Azul"
+                     alt="Taza azul">
+                <h3>Taza Azul</h3>
+                <p>Ideal para los amantes del café.</p>
+                <span>₡4.000</span>
+                <button>Comprar</button>
+            </div>
 
-3- Kali linux Conocimiento basico/intermedio
-Cuento con conocimiento intermedio/basico sobre este Sistema operativo, conozco los comandos necesarios para manipular un sistema Linux
-se usar herramientas de kali linux, como nmap,wireshark,hping, entre unas pocas mas y cuento con conocimiento sobre los comandos para manipular archivos
-en el OS linux.
-</pre>
+            <div class="producto">
+                <img src="https://placehold.co/300x250/fff3cd/99752c?text=Taza+Amarilla"
+                     alt="Taza amarilla">
+                <h3>Taza Amarilla</h3>
+                <p>Un toque de alegría en tu día.</p>
+                <span>₡3.800</span>
+                <button>Comprar</button>
+            </div>
 
-<hr>
+            <div class="producto">
+                <img src="https://placehold.co/300x250/e8eaf6/555b91?text=Taza+Personalizada"
+                     alt="Taza personalizada">
+                <h3>Taza Personalizada</h3>
+                <p>Personalízala a tu propio estilo.</p>
+                <span>₡5.000</span>
+                <button>Comprar</button>
+            </div>
 
-<h2>Programacion Y Prueba de Software</h2>
+        </div>
+    </section>
 
-<pre>
-1-Python Basico
-Cuento con un conocimiento basico en este lenguaje de programacion, listas, ciclos FOR, condicionales if, entre otras pocas cosas.
+    <!-- NOSOTROS -->
+    <section class="nosotros" id="nosotros">
+        <h2>Sobre nosotros</h2>
+        <p>
+            En MugStore nos dedicamos a ofrecer tazas originales,
+            creativas y de excelente calidad. Queremos acompañarte
+            en tus momentos favoritos con diseños especiales.
+        </p>
+    </section>
 
-2-HTML y CSS
-Tengo la capacidad de programar una pagina web basica en el lenguaje HTML 5 y Darle pequeñas mejorar graficas con CSS.
+    <!-- CONTACTO -->
+    <section class="contacto" id="contacto">
+        <h2>Contáctanos</h2>
+        <p>¿Tienes alguna consulta? Escríbenos.</p>
+        <p>Correo: contacto@mugstore.com</p>
+        <p>Teléfono: 8888-8888</p>
+    </section>
 
-3-SQL
-Conocimiento muy basico sobre las bases de datos, utilize mariadb para hacer algunas practicas.
-</pre>
-
-<hr>
-
-<h2>Tecnologias De la Informacion tics</h2>
-
-<pre>
-1-Word
-Cuento con una gran experiencia intermedia/alta desarrollando trabajos escritos semi profesionales con este software de ofimatica.
-
-2-Excel
-Manejo intermedio de Excel para llevar a cabo diferentes tareas con formulas, tablas y graficos para administrar Informacion.
-
-3-Power BI
-Manejo Intermedio para crear informes empresariales usando las diferentes herramientas de recoleccion de datos de este software.
-
-4-Powerpoint
-Manejo Intermedio/Avanzado en creacion de presentaciones con graficos, transiciones y uso de plantillas, aprovechando las herramientas de Powerpoint.
-
-5-Inteligencia Artificial
-Experiencia Intermedia usando diferentes aplicaciones de inteligencia artitifial como chatgpt,gemini,copilot,cloude entre otras.
-el año pasado se me asigno un proyecto junto a 4 compañeros en el que teniamos que desarrollar un podcast aprovechando todas las herramientas de la IA
-utilizando moduladores de voz, generacion de imagenes, generacion de guiones y editores de video.    
-</pre>
-
-<hr>
-
-<h2>Ingles</h2>
-
-<pre>
-Manejo un Ingles (B1) soy una persona a la que el ingles se le facilita, y durante toda mi vida 
-me he visto obligado a desarrollar este idioma para disfrutar de mis hobbies, en proceso de mejora
-cuento con un gran vocabulario tecnico y de uso diario.
-</pre>
-
-<hr>
-
-<h2>Emprendimiento</h2>
-
-<pre>
-En esta subarea he tenido la oportunidad de plantear y dirigir un emprendimiento sobre Asesorias y Capacitaciones de Ciberseguridad
-llamada AiC Security, gracias esta oportunidad tuvimos que desarrollar diferentes tareas como, analisis de mercado, segmentacion de clientes,
-diseño estrategico de diferentes materiales audiovisuales, estructura de costos, entre otras.
-</pre>
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>© 2026 MugStore - Todos los derechos reservados.</p>
+    </footer>
 
 </body>
 </html>
